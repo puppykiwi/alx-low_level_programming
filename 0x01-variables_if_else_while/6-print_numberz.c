@@ -1,15 +1,15 @@
 #include <string.h>
 #include <stdio.h>
 /*
-*technicalities
+*betty technicalities
 */int main(void)
 {
-char str[] = "0123456789";
 int i;
-int strLength = strlen(str);
-for (i = 0; i < strLength; i++)
+i = 48;
+while (i < 58)
 {
-putchar(str[i]);
+putchar(i);
+i++;
 }
 putchar('\n');
 return (0);
