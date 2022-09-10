@@ -17,7 +17,7 @@ while (k < 58)
 putchar(i);
 putchar(j);
 putchar(k);
-if (i != 55 || j != 57 || k != 58)
+if (i != 55 && j != 57 && k != 58)
 {
 putchar(44);
 putchar(32);
