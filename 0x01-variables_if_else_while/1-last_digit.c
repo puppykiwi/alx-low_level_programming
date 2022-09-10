@@ -7,12 +7,11 @@
 *betty style doc for function main goes there
 */int main(void)
 {
-	int n;
+	int n, j;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 
-int j;
 j = n % 10;
 if (j > 5)
 {
