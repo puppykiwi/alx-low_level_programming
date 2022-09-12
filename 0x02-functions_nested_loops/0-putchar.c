@@ -3,10 +3,10 @@
 *betty technicalities
 */int main(void)
 {
-char string[8]="_putchar";
+char string[8] = "_putchar";
 int i;
 i = 0;
-while (i!= 8)
+while (i != 8)
 {
 putchar(string[i]);
 i++;
