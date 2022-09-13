@@ -1,6 +1,6 @@
 #include<stdio.h>
 /*
-*
+*betty technicalities
 */int _isalpha(int c)
 {
 if (c >= 'a' && c <= 'z')
