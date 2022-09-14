@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<main.h>
 /*
 *betty technicalities
 */void print_to_98(int n)

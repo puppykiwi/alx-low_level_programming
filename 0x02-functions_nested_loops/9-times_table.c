@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<main.h>
 /*
 *betty technicalities
 */#include<stdio.h>

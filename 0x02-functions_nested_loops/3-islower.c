@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<main.h>
 /*
 *betty technicalities
 */int _islower(int c)
