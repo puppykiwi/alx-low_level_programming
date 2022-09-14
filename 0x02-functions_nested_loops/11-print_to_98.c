@@ -1,4 +1,3 @@
-#include<stdio.h>
 #include<main.h>
 /*
 *betty technicalities
@@ -32,5 +31,5 @@ else
 {
 printf("98");
 }
-putchar('\n');
+_putchar('\n');
 }

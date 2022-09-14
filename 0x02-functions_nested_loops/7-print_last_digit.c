@@ -1,4 +1,3 @@
-#include<stdio.h>
 #include<main.h>
 /*
 *betty technicalities
@@ -8,6 +7,6 @@ int last;
 last = n % 10;
 if (n < 0)
 last = last * -1;
-putchar(last + '0');
+_putchar(last + '0');
 return (last);
 }

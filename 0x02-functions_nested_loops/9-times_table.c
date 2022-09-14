@@ -1,4 +1,3 @@
-#include<stdio.h>
 #include<main.h>
 /*
 *betty technicalities
@@ -17,6 +16,6 @@ d = a * b;
 printf("%d", d);
 printf(", ");
 }
-putchar('\n');
+_putchar('\n');
 }
 }
