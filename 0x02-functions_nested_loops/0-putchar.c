@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include<main.h>
 /*
 *betty technicalities
@@ -9,9 +8,9 @@ int i;
 i = 0;
 while (i != 8)
 {
-putchar(string[i]);
+_putchar(string[i]);
 i++;
 }
-putchar('\n');
+_putchar('\n');
 return (0);
 }

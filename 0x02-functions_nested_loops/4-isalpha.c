@@ -1,4 +1,3 @@
-#include<stdio.h>
 #include<main.h>
 /*
 *betty technicalities
@@ -10,5 +9,5 @@ else if (c >= 'A' && c <= 'Z')
 return (1);
 else
 return (0);
-putchar('\n');
+_putchar('\n');
 }

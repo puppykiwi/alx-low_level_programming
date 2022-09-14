@@ -1,4 +1,3 @@
-#include<stdio.h>
 #include<main.h>
 /*
 *betty technicalities
@@ -8,10 +7,10 @@ int i;
 i = 97;
 while (i != 122)
 {
-putchar(i);
+_putchar(i);
 i++;
 }
-putchar('\n');
+_putchar('\n');
 }
 
 /*
