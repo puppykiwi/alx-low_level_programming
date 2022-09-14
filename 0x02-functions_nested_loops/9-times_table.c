@@ -2,7 +2,7 @@
 #include<main.h>
 /*
 *betty technicalities
-*/#include<stdio.h>
+*
 /*
 *betty technicalities
 */void times_table(void)
