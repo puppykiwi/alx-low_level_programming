@@ -9,7 +9,16 @@ while (n <= 98)
 {
 if (n < 10)
 {
+if (n > -1)
+{
 _putchar(n+'0');
+}
+else if (n < 0)
+{
+_putchar((n / 100)+ '0');
+_putchar(((n % 100)/ 10)+ '0');
+_putchar(((n % 100) % 10)+ '0');
+}
 }
 else if (n > 9)
 {
