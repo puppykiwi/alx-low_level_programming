@@ -21,8 +21,6 @@ else
 _putchar((d / 10) + '0');
 _putchar((d % 10) + '0');
 }
-_putchar(d);
-_putchar(' ');
 }
 _putchar('\n');
 }
