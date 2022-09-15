@@ -16,14 +16,17 @@ d = a * b;
 if (d < 10)
 {
 _putchar(d + '0');
+_putchar(',');
+_putchar(' ');
+_putchar(' ');
 }
 else
 {
 _putchar((d / 10) + '0');
 _putchar((d % 10) + '0');
-}
 _putchar(',');
 _putchar(' ');
+}
 }
 _putchar('\n');
 }
