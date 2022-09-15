@@ -12,11 +12,3 @@ i++;
 }
 _putchar('\n');
 }
-
-/*
-*betty technicalities
-*/int main(void)
-{
-print_alphabet();
-return (0);
-}
