@@ -25,7 +25,7 @@ _putchar(' ');
 }
 else
 {
-_putchar(' ');
+
 }
 }
 else
@@ -39,7 +39,7 @@ _putchar(' ');
 }
 else
 {
-_putchar(' ');
+
 }
 }
 }
