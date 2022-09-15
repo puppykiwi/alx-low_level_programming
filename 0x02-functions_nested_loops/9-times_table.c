@@ -7,11 +7,22 @@ int a, b;
 int d;
 for (a = 0; a < 10; a++)
 {
-for (b = 0; b < 10; b++)
+for (b = 1; b < 10; b++)
 {
+_putchar(',');
+_putchar(' ');
 d = a * b;
+if (d < 10)
+{
+_putchar('d');
+}
+else
+{
+_putchar((d / 10) + '0');
+_putchar((d % 10) + '0');
+}
 _putchar(d);
-_putchar('\n');
+_putchar(' ');
 }
 _putchar('\n');
 }
