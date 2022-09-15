@@ -3,6 +3,16 @@
 *betty technicalities
 */void print_to_98(int n)
 {
+
+if (n < '0')
+{
+ n = n * -1;
+}
+else if (n > '0')
+{
+
+}
+
 if (n < 98)
 {
 while (n <= 98)
