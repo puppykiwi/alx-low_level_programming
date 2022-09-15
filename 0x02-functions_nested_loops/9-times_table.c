@@ -13,7 +13,7 @@ for (b = 1; b < 10; b++)
 d = a * b;
 if (d < 10)
 {
-_putchar(d);
+_putchar(d + '0');
 }
 else
 {
