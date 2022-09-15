@@ -1,4 +1,5 @@
 #include "main.h"
+#include<stdio.h>
 /*
 *betty technicalities
 */void print_to_98(int n)
@@ -23,8 +24,8 @@ _putchar(((n % 100) % 10)+ '0');
 }
 else if (n > -100)
 {
-_putchar((n / 10)+ '0' );
-_putchar((n % 10)+ '0' );
+printf((n / 10));
+printf((n % 10));
 }
 }
 }
