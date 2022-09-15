@@ -7,7 +7,16 @@ if (n < 98)
 {
 while (n <= 98)
 {
+if (n < 10)
+{
 _putchar(n+'0');
+}
+else if (n > 9)
+{
+_putchar((n / 10)+ '0' );
+_putchar((n % 10)+ '0' );
+}
+
 if (n != 98)
 {
 _putchar(',');
@@ -20,7 +29,10 @@ else if (n > 98)
 {
 while (n >= 98)
 {
-_putchar(n+'0');
+_putchar((n / 100)+ '0');
+_putchar((n / 10)+ '0');
+_putchar((n % 100)+ '0');
+
 if (n != 98)
 {
 _putchar(',');
