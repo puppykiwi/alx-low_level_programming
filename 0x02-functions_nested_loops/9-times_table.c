@@ -14,7 +14,7 @@ _putchar(' ');
 d = a * b;
 if (d < 10)
 {
-_putchar(d);
+_putchar(' ');
 }
 else
 {
