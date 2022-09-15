@@ -15,9 +15,9 @@ _putchar(n+'0');
 }
 else if (n < 0)
 {
-_putchar((n / 100)+ '0');
-_putchar(((n % 100)/ 10)+ '0');
-_putchar(((n % 100) % 10)+ '0');
+_putchar((n / 100));
+_putchar(((n % 100)/ 10));
+_putchar(((n % 100) % 10));
 }
 }
 else if (n > 9)
