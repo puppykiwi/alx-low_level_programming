@@ -24,8 +24,11 @@ _putchar(((n % 100) % 10)+ '0');
 }
 else if (n > -100)
 {
-printf((n / 10));
-printf((n % 10));
+int q,w;
+q = n / 100;
+w = n % 10;
+printf("%d", q);
+printf("%d", w);
 }
 }
 }
