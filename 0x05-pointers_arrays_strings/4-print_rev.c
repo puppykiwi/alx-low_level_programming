@@ -1,5 +1,4 @@
 #include "main.h"
-#include<stdio.h>
 #include<string.h>
 /*
 *betty technicalities
@@ -12,4 +11,5 @@ while (i > -1)
 _putchar(s[i]);
 i--;
 }
+_putchar('\n');
 }
