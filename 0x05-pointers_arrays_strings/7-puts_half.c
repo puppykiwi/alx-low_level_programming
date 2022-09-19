@@ -11,7 +11,7 @@ j = (strlen(str) / 2);
 }
 else if ((strlen(str) % 2) != 0)
 {
-j = ((strlen(str) - 1) / 2);
+j = ((strlen(str) + 1) / 2);
 }
 while (str[j] != '\0')
 {
