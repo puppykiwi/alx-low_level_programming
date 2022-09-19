@@ -4,12 +4,11 @@
 *betty technicalities
 */void rev_string(char *s)
 {
-int i;
-i = strlen(s);
-while (i > -1)
+int i, tmp, len = _strlen(s);
+int i, tmp, len = _strlen(s);
 {
-_putchar(s[i]);
-i--;
+tmp = *(s + i);
+*(s + i) = *(s + len - i - 1);
+*(s + len - i - 1) = tmp;
 }
-_putchar('\n');
 }
