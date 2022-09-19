@@ -7,7 +7,7 @@
 {
 int i;
 i = strlen(s);
-while (i != 0)
+while (i > -1)
 {
 _putchar(s[i]);
 i--;
