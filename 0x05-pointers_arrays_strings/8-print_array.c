@@ -9,13 +9,12 @@ i = 0;
 while (i != n)
 {
 printf("%d", a[i]);
-if (i != n)
+if ((i + 1) < n)
 {
 printf(", ");
 }
 else
 {
-
 }
 i++;
 }
