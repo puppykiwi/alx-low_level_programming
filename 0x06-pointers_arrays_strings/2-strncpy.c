@@ -4,15 +4,19 @@
 */char *_strncpy(char *dest, char *src, int n)
 {
 
-int length0, length1;
-length0 = 0;
-length1 = 0;
+int length;
+length = 0;
 
-while (length1 <= n)
+while (length <= n && src[length] != '\0')
 {
-dest[length0] = src[length1];
-length0++;
-length1++;
+dest[length] = src[length];
+length++;
+}
+
+while (length < n)
+{
+dest[length] = '\0';
+length++;
 }
 
 return (dest);
