@@ -6,11 +6,19 @@
 char *b;
 int i;
 i = 0;
-while (s[i] != c)
+
+while (s[i] != '\0')
+{
+if ((s[i] == c))
+{
+b = &s[i];
+return (b);
+}
+else
 {
 i++;
 }
+}
 
-b = &s[i];
-return (b);
+return (NULL);
 }
