@@ -7,7 +7,7 @@
 int result = 1;
 int j = 1;
 
-if (argc > 0)
+if (argc > 1)
 {
 while (j != argc)
 {
@@ -19,7 +19,7 @@ return (0);
 }
 else
 {
-printf("Error");
+printf("Error\n");
 return (1);
 }
 
