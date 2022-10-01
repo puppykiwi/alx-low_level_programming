@@ -17,7 +17,7 @@ else
 {
 while (j != argc)
 {
-if (atoi(argv[j]) >= 0 && atoi(argv[j]) <= 9)
+if (isdigit(atoi(argv[j])))
 {
 result = result + atoi(argv[j]);
 j++;
