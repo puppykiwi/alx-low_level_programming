@@ -1,57 +1,65 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <ctype.h>
 
-int is_number(char *s);
-/*
-*betty technicalities
-*/int main(int argc, char *argv[])
-{
-int result = 0;
-int j = 1;
-int check;
-if (argc == 1)
-{
-printf("0\n");
-}
+/**
+ * is_number - checks to see if input is a number
+ * @s: input to check for numberhood
+ * Return: 1 if it is a number, 0 if not
+ */
 
-else
+int is_number(char *s)
 {
-while (j != argc)
-{
-check = is_number(argv[j]);
-if (check == 1)
-{
-result = result + atoi(argv[j]);
-j++;
-}
-else
-{
-printf("Error\n");
-return (1);
-j++;
-}
-}
-printf("%d\n", result);
-}
+	int i;
+
+	i = 0;
+	while (*(s + i) != '\0')
+	{
+		if (*(s + i) >= '0' && *(s + i) <= '9')
+		{
+			i++;
+		}
+		else
+		{
+			return (0);
+		}
+	}
+	return (1);
 }
 
-/*
-*betty technicalities
-*/int is_number(char *s)
+/**
+ * main - prints the sum of positive numbers
+ * @argc: number of arguments
+ * @argv: array of arguments
+ * Return: (0)
+ */
+
+int main(int argc, char *argv[])
 {
-int i;
-i = 0;
-while (*(s + i) != '\0')
-{
-if (*(s + i) >= '0' && *(s + i) <= '9')
-{
-i++;
-}
-else
-{
-return (0);
-}
-}
-return (1);
+	int i, sum, is_num;
+
+	sum = 0;
+	if (argc == 1)
+	{
+		printf("0\n");
+	}
+	else if (argc > 1)
+	{
+		i = 1;
+		while (i < argc)
+		{
+			is_num = is_number(argv[i]);
+			if (is_num == 1)
+			{
+				sum += atoi(argv[i]);
+			}
+			else
+			{
+				printf("Error\n");
+				return (1);
+			}
+			i++;
+		}
+		printf("%d\n", sum);
+	}
+	return (0);
 }
