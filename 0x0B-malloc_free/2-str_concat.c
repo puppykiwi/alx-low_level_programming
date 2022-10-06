@@ -19,6 +19,11 @@ s2 = "";
 
 result = malloc(totalen * sizeof(char) + 1);
 
+if (result == NULL)
+{
+return (NULL);
+}
+
 for (i = 0; i != len1; i++)
 {
 result[i] = s1[i];
@@ -28,9 +33,5 @@ for (i = 0; i != len2; i++)
 result[i + len1] = s2[i];
 }
 
-if (result == NULL)
-{
-return (NULL);
-}
 return (result);
 }
