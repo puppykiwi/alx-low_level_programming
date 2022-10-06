@@ -5,10 +5,8 @@
 *betty technicalities
 */char *str_concat(char *s1, char *s2)
 {
+int len1, len2, totalen, i;
 char *result;
-int totalen = (strlen(s1) + strlen(s2));
-int len1, len2;
-int i;
 
 if (s1 == NULL)
 s1 = "";
@@ -25,6 +23,8 @@ while (*(s2 + len2) != '\0')
 {
 len2++;
 }
+
+totalen = len1 + len2;
 
 result = (char*) malloc(totalen * sizeof(char) + 1);
 
