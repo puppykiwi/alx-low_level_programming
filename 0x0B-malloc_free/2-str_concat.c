@@ -26,7 +26,7 @@ len2++;
 
 totalen = len1 + len2;
 
-result = (char*) malloc(totalen * sizeof(char) + 1);
+result = (char *) malloc(totalen * sizeof(char) + 1);
 
 if (result == NULL)
 {
