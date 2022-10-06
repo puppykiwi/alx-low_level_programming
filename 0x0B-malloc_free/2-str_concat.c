@@ -25,7 +25,7 @@ s1 = "";
 if (s2 == NULL)
 s2 = "";
 
-result = malloc(totalen * sizeof(char) + 1);
+result = (char*) malloc(totalen * sizeof(char) + 1);
 
 if (result == NULL)
 {
