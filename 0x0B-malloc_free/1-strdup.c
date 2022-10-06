@@ -15,18 +15,15 @@ return (NULL);
 
 result = malloc(strlen(str) * sizeof(char) + 1);
 j = strlen(str);
+if (result == NULL)
+{
+return (NULL);
+}
 for (i = 0; i < j; i++)
 {
 result[i] = str[i];
 }
-if (result[i - 1] == str[i - 1])
-{
-return (result);
-}
-else
-{
-return (NULL);
-}
 
+return (result);
 
 }
