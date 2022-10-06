@@ -26,7 +26,7 @@ while (*(s2 + len2) != '\0')
 len2++;
 }
 
-result = malloc(totalen * sizeof(char) + 1);
+result = (char*) malloc(totalen * sizeof(char) + 1);
 
 if (result == NULL)
 {
