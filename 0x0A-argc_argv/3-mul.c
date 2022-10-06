@@ -9,18 +9,18 @@ int j = 1;
 
 if (argc > 1)
 {
-while (j != argc)
-{
-result = result *atoi(argv[j]);
-j++;
-}
-printf("%d\n", result);
-return (0);
+    while (j != argc)
+    {
+        result = result *atoi(argv[j]);
+        j++;
+    }
+    printf("%d\n", result);
+    return (0);
 }
 else
 {
-printf("Error\n");
-return (1);
+    printf("Error\n");
+    return (1);
 }
 
 }

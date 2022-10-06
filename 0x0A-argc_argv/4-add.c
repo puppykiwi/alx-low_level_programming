@@ -11,28 +11,29 @@ int j = 1;
 int check;
 if (argc == 1)
 {
-printf("0\n");
+    printf("0\n");
 }
 
 else
 {
-while (j != argc)
-{
-check = is_number(argv[j]);
-if (check == 1)
-{
-result = result + atoi(argv[j]);
-j++;
+    while (j != argc)
+    {
+        check = is_number(argv[j]);
+        if (check == 1)
+        {
+            result = result + atoi(argv[j]);
+            j++;
+        }
+        else
+        {
+            printf("Error\n");
+            return (1);
+            j++;
+        }
+    }
+    printf("%d\n", result);
 }
-else
-{
-printf("Error\n");
-return (1);
-j++;
-}
-}
-printf("%d\n", result);
-}
+
 return (0);
 }
 
@@ -42,16 +43,17 @@ return (0);
 {
 int i;
 i = 0;
+
 while (*(s + i) != '\0')
 {
-if (*(s + i) >= '0' && *(s + i) <= '9')
-{
-i++;
-}
-else
-{
-return (0);
-}
+    if (*(s + i) >= '0' && *(s + i) <= '9')
+    {
+        i++;
+    }
+    else
+    {
+        return (0);
+    }
 }
 return (1);
 }
