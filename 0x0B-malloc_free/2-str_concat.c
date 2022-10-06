@@ -12,7 +12,7 @@ int i;
 len1 = strlen(s1);
 len2 = strlen(s2);
 
-result = malloc(totalen * sizeof(char));
+result = malloc(totalen * sizeof(char) + 1);
 
 for (i = 0; i != len1; i++)
 {
