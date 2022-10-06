@@ -5,8 +5,21 @@
 *betty technicalities
 */char *_strdup(char *str)
 {
-int i, j;
-char *result = malloc(strlen(str) * sizeof(char));
+int i, j, length;
+char *result;
+
+if (str == NULL)
+{
+return (NULL);
+}
+
+length = 0;
+while (*(str + length) != '\0')
+{
+length++;
+}
+
+result = malloc(length * sizeof(char));
 j = sizeof(result);
 for (i = 0; i < j; i++)
 {
@@ -20,9 +33,6 @@ else
 {
 return (NULL);
 }
-if (str == NULL)
-{
-return (NULL);
-}
+
 
 }
