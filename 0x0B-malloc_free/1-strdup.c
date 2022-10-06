@@ -5,7 +5,7 @@
 *betty technicalities
 */char *_strdup(char *str)
 {
-int i, j, length;
+int i, j;
 char *result;
 
 if (str == NULL)
@@ -13,14 +13,8 @@ if (str == NULL)
 return (NULL);
 }
 
-length = 0;
-while (*(str + length) != '\0')
-{
-length++;
-}
-
-result = malloc(length * sizeof(char));
-j = sizeof(result);
+result = malloc(strlen(str) * sizeof(char));
+j = strlen(str);
 for (i = 0; i < j; i++)
 {
 result[i] = str[i];
