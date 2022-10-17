@@ -18,7 +18,7 @@
             printf("Name: %s\n", (*d).name);
         }
 
-        printf("Age: %lf\n", (*d).age);
+printf("Age: %s\n", (*d).age);
 
         if ((*d).owner == NULL)
         {
