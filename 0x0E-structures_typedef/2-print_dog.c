@@ -6,27 +6,30 @@
 *betty technicalities
 */void print_dog(struct dog *d)
 {
-if (d != NULL)
-{
-if ((*d).name == NULL)
-{
-printf("Name: (nil)\n");
-}
-else if ((*d).name != NULL)
-{
-printf("Name: %s\n", (*d).name);
-}
+    if (d != NULL)
+    {
+        //name checker
+        if ((*d).name == NULL)
+        {
+            printf("Name: (nil)\n");
+        }
+        else if ((*d).name != NULL)
+        {
+            printf("Name: %s\n", (*d).name);
+        }
 
-printf("Age: %f\n", (*d).age);
+        //owner checker
+        if ((*d).owner == NULL)
+        {
+            printf("Owner: (nil)\n");
+        }
+        else if ((*d).owner != NULL)
+        {
+            printf("Owner: %s\n", (*d).owner);
+        }
 
-if ((*d).owner == NULL)
-{
-printf("Owner: (nil)\n");
-}
-else if ((*d).owner != NULL)
-{
-printf("Owner: %s\n", (*d).owner);
-}
 
-}
+        printf("Age: %i\n", (*d).age);
+
+    }
 }
