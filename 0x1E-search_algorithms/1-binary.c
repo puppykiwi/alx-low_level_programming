@@ -16,21 +16,29 @@ return (-1);
 left = 0;
 right = size - 1;
 
-while (left <= right) {
+while (left <= right)
+{
 int mid = left + (right - left) / 2;
 printf("Searching in array: ");
-for (int i = left; i <= right; ++i) {
+for (int i = left; i <= right; ++i)
+{
 printf("%d", array[i]);
-if (i < right){printf(", "); }
+if (i < right)
+{
+printf(", ");
+}
 }
 printf("\n");
-if (array[mid] == value) {
-return mid;
+if (array[mid] == value)
+{
+return (mid);
 }
-else if (array[mid] < value) {
+else if (array[mid] < value)
+{
 left = mid + 1;
 }
-else {
+else
+{
 right = mid - 1;
 }
 }
