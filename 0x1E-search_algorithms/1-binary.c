@@ -1,4 +1,8 @@
 #include "search_algos.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
+
 /**
  * binary_search - searches for a value in a sorted array of integers
  * using the Binary search algorithm
