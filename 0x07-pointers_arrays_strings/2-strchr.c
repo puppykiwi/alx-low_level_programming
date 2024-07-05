@@ -1,24 +1,26 @@
 #include "main.h"
-/*
-*betty technicalities
-*/char *_strchr(char *s, char c)
-{
-char *b;
-int j;
-j = 0;
 
-while (s[j] != '\0')
-{
-if (s[j] == c)
-{
-b = &s[j];
-return (b);
-}
-else
-{
-j++;
-}
-}
+/**
+ * _strchr - locates a character in a string
+ *
+ * @c: occurrence of the character
+ *
+ * @s: in the string
+ *
+ * Return: a pointer to the first occurrence of the character
+ */
 
-return (NULL);
+char *_strchr(char *s, char c)
+{
+	while (*s)
+	{
+		if (*s != c)
+			s++;
+		else
+			return (s);
+	}
+	if (c == '\0')
+		return (s);
+
+	return (NULL);
 }
